@@ -16,97 +16,156 @@ const ProductCard = ({ product }) => {
       <li>
         <sup>Код_товара:</sup>
 
-        {product.Код_товара}
+        {product.product_code}
       </li>
       <li>
         <sup>Название_позиции:</sup>
-        {product.Название_позиции}
+        {product.position_name}
       </li>
       <li>
         <sup>Название_позиции_укр:</sup>
-        {product.Название_позиции_укр}
+        {product.position_name_ukr}
       </li>
       <li>
         <sup>Поисковые_запросы:</sup>
-        {product.Поисковые_запросы}
+        {product.search_queries}
       </li>
       <li>
         <sup>Поисковые_запросы_укр:</sup>
-        {product.Поисковые_запросы_укр}
+        {product.search_queries_ukr}
       </li>
       <li>
         <sup>Описание:</sup>
-        <span dangerouslySetInnerHTML={{ __html: product.Описание }}></span>
+        <span dangerouslySetInnerHTML={{ __html: product.description }}></span>
       </li>
       <li>
         <sup>Описание_укр:</sup>
-        <span dangerouslySetInnerHTML={{ __html: product.Описание_укр }}></span>
+        <span
+          dangerouslySetInnerHTML={{ __html: product.description_ukr }}
+        ></span>
       </li>
       <li>
         <sup>Тип_товара:</sup>
-        {product.Тип_товара}
+        {product.item_type}
       </li>
 
       <li>
         <sup>Цена:</sup>
-        {product.Цена} {product.Валюта}
+        {product.price} {product.currency}
       </li>
       <li>
         <sup>Единица_измерения:</sup>
-        {product.Единица_измерения}
+        {product.unit_of_measurement}
       </li>
       <li>
         <sup>Минимальный_объем_заказа:</sup>
-        {product.Минимальный_объем_заказа}
+        {product.min_order_volume}
       </li>
 
       <li>
         <img
-          src={product.Ссылка_изображения}
-          alt={product.Название_позиции}
+          src={product.image_link}
+          alt={product.position_name_ukr}
           width="300"
           height="300"
         />
       </li>
       <li>
         <sup>Наличие:</sup>
-        {product.Наличие}
+        {product.availability}
       </li>
       <li>
-        <sup>Номер_группы:</sup>
-        {product.Номер_группы}
+        <sup>(Минимальный_заказ_опт):</sup>
+        {product.min_wholesale_order}
       </li>
       <li>
         <sup>Название_группы:</sup>
-        {product.Название_группы}
+        {product.group_name}
       </li>
-      <li>
-        <sup>Адрес_подраздела:</sup>
-        {product.Адрес_подраздела}
-      </li>
+
       <li>
         <sup>Уникальный_идентификатор:</sup>
-        {product.Уникальный_идентификатор}
+        {product.unique_id}
       </li>
       <li>
         <sup>Идентификатор_подраздела:</sup>
-        {product.Идентификатор_подраздела}
+        {product.subcategory_id}
       </li>
       <li>
         <sup>Страна_производитель:</sup>
-        {product.Страна_производитель}
+        {product.manufacturer_country}
       </li>
       <li>
         <sup>Личные_заметки:</sup>
-        {product.Личные_заметки}
+        {product.personal_notes}
       </li>
       <li>
         <sup>Продукт_на_сайте:</sup>
-        {product.Продукт_на_сайте}
+        {product.on_website}
       </li>
       <li>
-        <sup>Ярлык:</sup>
-        {product.Ярлык}
+        <sup>Вид парфумерної продукції:</sup>
+        {product.product_type}
+      </li>
+      <li>
+        <sup>Тип аромата:</sup>
+        {product.fragrance_type}
+      </li>
+      <li>
+        <sup>Объем:</sup>
+        {product.volume_value} {product.volume_unit}
+      </li>
+      <li>
+        <sup>Класифікація:</sup>
+        {product.classification}
+      </li>
+      <li>
+        <sup>Рік випуску:</sup>
+        {product.release_year}
+      </li>
+      <li>
+        <sup>Країна виробник:</sup>
+        {product.manufacturer_country}
+      </li>
+      <li>
+        <sup>Виробник:</sup>
+        {product.manufacturer}
+      </li>
+      <li>
+        <sup>Нота сердца:</sup>
+        {product.heart_note}
+      </li>
+      <li>
+        <sup>Кінцева нота:</sup>
+        {product.final_note}
+      </li>
+      <li>
+        <sup>Тип аромата:</sup>
+        {product.fragrance_type}
+      </li>
+      <li>
+        <sup>Единица_измерения:</sup>
+        {product.unit_of_measurement}
+      </li>
+      <li>
+        <sup>Минимальный_объем_заказа:</sup>
+        {product.min_order_volume}
+      </li>
+      <li>
+        <sup>Оптовая_цена:</sup>
+        {product.wholesale_price}
+      </li>
+      <li>
+        <sup>Минимальный_заказ_опт:</sup>
+        {product.min_wholesale_order}
+      </li>
+      <li>
+        <sup>Количество:</sup>
+        {product.quantity}
+      </li>
+      <li>
+        <sup>Адрес_подраздела:</sup>
+        {product.subcategory_address}
       </li>
     </ul>
   );
